@@ -1,0 +1,139 @@
+/* style.css */
+/* style.css */
+
+/* My custom colors */
+:root {
+  --green: #0A401B;
+  --white: #F2F4EF;
+  --black: #000000;
+  --brown: #8F8073;
+  --blue: #0353A4;
+}
+
+html {
+  background-color: var(--white);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Add the background color to the top navigation */
+.topnav {
+  background-color: var(--white);
+  float: right;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  display: inline-block; /* Use inline-block instead of float */
+  color: var(--green);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: var(--green);
+  opacity: 0.5;
+  color: var(--white);
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/* Chatgpt */
+.logoClass {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  height: 90vh; /* Make sure it takes up the full height of the viewport */
+}
+
+.logo {
+  max-width: 100%; /* Ensure the logo doesn't exceed its original size */
+  transition: transform 0.5s; /* Add a smooth transition effect */
+}
+
+/* Add styling for main content */
+.main-content {
+  text-align: center;
+  padding: 50px;
+}
+
+/* Add styling for the footer */
+.footer {
+  background-color: var(--green);
+  color: var(--white);
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
+
+
+/* Contains two images and software header/body text */
+.first-block {
+  position: relative;
+}
+
+
+.girl-worshiping-image {
+  border-top-right-radius: 250px; 
+  overflow-x: hidden;
+  position: absolute;
+  left: -100px;
+}
+
+.guitar-playing-image {
+  position: absolute;
+  top: 250px;
+  left: 500px;
+  border-top-left-radius: 100px; 
+}
+
+.block-one-header {
+    font-family: 'Gagalin', sans-serif;
+    color: var(--green);
+    font-size: 50px;
+    overflow-wrap: break-word; 
+    width: 500px;
+    position: absolute;
+    top: 450px;
+}
+
+
+.block-one-body {
+  color: var(--green);
+  width: 500px;
+  font-size: 20px;
+  position: absolute;
+  top: 610px;
+}
+
+/* Second block containing image and several pieces of text */
+.second-block {
+  position: relative;
+}
+
+.campers-hiking-image {
+  left: -10px;
+  width: 110vw;
+  height: 400px;
+  position: absolute;
+  top: 710px;
+  object-fit: cover;  
+  object-position: 0 80%;
+
+}
