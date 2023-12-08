@@ -92,25 +92,27 @@ body {
 .girl-worshiping-image {
   border-top-right-radius: 250px; 
   overflow-x: hidden;
-  position: absolute;
-  left: -100px;
+  position: relative;
+  left: -10px;
 }
 
 .guitar-playing-image {
-  position: absolute;
-  top: 250px;
-  left: 500px;
+  position: relative;
+  float: right;
+  right: -10px;
+  top: -250px;
   border-top-left-radius: 100px; 
 }
 
 .block-one-header {
     font-family: 'Gagalin', sans-serif;
     color: var(--green);
-    font-size: 50px;
+    font-size: 60px;
     overflow-wrap: break-word; 
     width: 500px;
-    position: absolute;
-    top: 450px;
+    top: -40px;
+    left: 25px;
+    position: relative;
 }
 
 
@@ -118,22 +120,58 @@ body {
   color: var(--green);
   width: 500px;
   font-size: 20px;
-  position: absolute;
-  top: 610px;
+  position: relative;
+  left: 25px;
+  top: -75px;
 }
 
 /* Second block containing image and several pieces of text */
 .second-block {
   position: relative;
+  
 }
 
 .campers-hiking-image {
   left: -10px;
   width: 110vw;
+  top: -250px;
   height: 400px;
-  position: absolute;
-  top: 710px;
+  position: relative;
   object-fit: cover;  
   object-position: 0 80%;
 
+}
+
+.block-two-header {
+  font-family: 'Gagalin', sans-serif;
+  color: var(--green);
+  font-size: 60px;
+  overflow-wrap: break-word; 
+  width: 500px;
+  top: -280px;
+  left: 50px;
+  position: relative;
+}
+
+.block-two-body-one {
+  color: var(--green);
+  width: 500px;
+  font-size: 20px;
+  position: relative;
+  left: 50px;
+  top: -280px;
+}
+
+.explore-our-solution {
+  position: relative;
+  background-color: var(--brown);
+  border: none;
+  border-radius: 100px;
+  color: var(--white);
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  font-family: 'Gagalin', sans-serif;
+  top: -250px;
+  left: 50px;
 }
