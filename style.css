@@ -50,27 +50,19 @@ body {
   font-size: 17px;
 }
 
-/* Chatgpt */
-.logoClass {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  align-items: center;
-  justify-content: center;
-  height: 90vh; /* Make sure it takes up the full height of the viewport */
+.logo-container {
+ height: 90dvb;
 }
 
 .logo {
   max-width: 100%; /* Ensure the logo doesn't exceed its original size */
+  height: auto; /* Maintain the aspect ratio of the image */
+  display: block; /* Remove any extra space below the image */
+  margin: 0 auto; /* Center align the image within its container */
   transition: transform 0.5s; /* Add a smooth transition effect */
 }
 
-/* Add styling for main content */
-.main-content {
-  text-align: center;
-  padding: 50px;
-}
+
 
 /* Add styling for the footer */
 .footer {
@@ -90,24 +82,32 @@ body {
 
 
 .girl-worshiping-image {
-  border-top-right-radius: 250px; 
-  overflow-x: hidden;
-  position: relative;
-  left: -10px;
+  border-top-right-radius: 50vh; 
+  width: 65vw;
+  position: absolute;
+  top:0;
+  right:40vw;
+  z-index: 0;
 }
 
 .guitar-playing-image {
-  position: relative;
-  float: right;
-  right: -10px;
-  top: -250px;
-  border-top-left-radius: 100px; 
+  border-top-left-radius: 50vh; 
+  width: 65vw;
+  position: absolute;
+  top:0;
+  left:40vw;
+  z-index: 1;
+
 }
+
+
+/* working from here
+
 
 .block-one-header {
     font-family: 'Gagalin', sans-serif;
     color: var(--green);
-    font-size: 60px;
+    font-size: 30px;
     overflow-wrap: break-word; 
     width: 500px;
     top: -40px;
@@ -125,7 +125,7 @@ body {
   top: -75px;
 }
 
-/* Second block containing image and several pieces of text */
+/* Second block containing image and several pieces of text 
 .second-block {
   position: relative;
   
@@ -175,3 +175,4 @@ body {
   top: -250px;
   left: 50px;
 }
+*/
