@@ -55,7 +55,6 @@ body {
 
 .logo-container {
  height: 90dvb;
- border: 2px solid black
 }
 
 .logo {
@@ -75,14 +74,13 @@ body {
 
 /* Div containing all first-block items */
 .first-block {
-  border: 2px solid black;
+  border: 2px solid rgb(255, 16, 16);
   height: 100%;
   
 }
 
 /* Div containing the photos in the first block */
 .first-photos {
-  border: 2px solid rgb(255, 16, 16);
 }
 .first-photos:after{
   content: "";
@@ -109,7 +107,6 @@ body {
 
 /* Div containing the text in the first block */
 .first-text {
-  border: 2px solid rgb(0, 8, 255);
   z-index: 5;
 }
 .block-one-header {
@@ -135,12 +132,10 @@ body {
 }
 
 
-
-
-
 /* Second block containing image and several pieces of text */
 .second-block {
   position: relative;
+  border: 2px solid rgb(16, 255, 72);
 
 }
 .campers-hiking-image {
@@ -150,7 +145,6 @@ body {
   position: relative;
   object-fit: cover;  
   object-position: 0 80%;
-  top: 50vw;
 
 }
 
@@ -166,7 +160,6 @@ body {
   color: var(--green);
   width: 50vw;
   font-size: 20px;
-  position: relative;
 }
 
 .explore-our-solution {
@@ -185,17 +178,20 @@ body {
   color: var(--green);
   width: 50vw;
   font-size: 20px;
-  position: relative;
 }
 
 .second-left {
   float: left;
-  width: 50%;
+  width: 48%;
+  border: 2px solid rgb(255, 16, 16);
+
 }
 
 .second-right {
-  float: left;
-  width: 50%;
+  float: right;
+  width: 48%;
+  border: 2px solid rgb(64, 16, 255);
+
 }
 
 /* Add styling for the footer */
