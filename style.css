@@ -82,9 +82,13 @@ body {
 
 /* Div containing the photos in the first block */
 .first-photos {
-
+  border: 2px solid rgb(255, 16, 16);
 }
-
+.first-photos:after{
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .girl-worshiping-image {
   border-top-right-radius: 20vh; 
@@ -100,24 +104,25 @@ body {
   position: absolute;
   left:40vw;
   z-index: 1;
-
+  transform: translateY(50%);
 }
 
 /* Div containing the text in the first block */
 .first-text {
-
+  border: 2px solid rgb(0, 8, 255);
+  z-index: 5;
 }
 .block-one-header {
   font-family: 'Gagalin', sans-serif;
   color: var(--green);
   font-size: 35px;
-  width: 40vw;
+  width: 35vw;
   position: relative;
 }
 
 .block-one-body {
   color: var(--green);
-  width: 40vw;
+  width: 35vw;
   font-size: 20px;
   position: relative;
 }
