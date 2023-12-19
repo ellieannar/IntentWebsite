@@ -13,14 +13,15 @@ document.addEventListener("DOMContentLoaded", function () {
 function returnHeights() {
     var photosDiv = document.getElementById('first-photos');
     const image2 = document.getElementById('guitar-playing-image');
-    photosDiv.style.height = (image2.height * 1.5) + 'px';
+    photosDiv.style.height = (image2.height) + 'px';
 
     var textDiv = document.getElementById('first-text');
     const textOne = document.getElementById('first-body')
     textDiv.style.height = textOne.height + 'px'
 
-    const leftAlignedText = document.getElementById('second-left');
+    var leftAlignedText = document.getElementById('second-left');
     var rightAlignedText = document.getElementById('second-right');
-    rightAlignedText.style.height = leftAlignedText.height + 'px';
+    rightAlignedText.style.height =  200 + 'px';
+    leftAlignedText.style.height = 200+'px'
 
 }
