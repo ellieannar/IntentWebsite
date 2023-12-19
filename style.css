@@ -22,6 +22,9 @@ body {
 .topnav {
   background-color: var(--white);
   float: right;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
 /* Style the links inside the navigation bar */
@@ -52,6 +55,7 @@ body {
 
 .logo-container {
  height: 90dvb;
+ border: 2px solid black
 }
 
 .logo {
@@ -64,18 +68,21 @@ body {
 
 
 
-/* Add styling for the footer */
-.footer {
-  background-color: var(--green);
-  color: var(--white);
-  text-align: center;
-    width: 100%;
+
+
+
+/* Contains two images and software header/body text ---------------- */
+
+/* Div containing all first-block items */
+.first-block {
+  border: 2px solid black;
+  height: 100%;
+  
 }
 
+/* Div containing the photos in the first block */
+.first-photos {
 
-/* Contains two images and software header/body text */
-.first-block {
-  position: relative;
 }
 
 
@@ -83,7 +90,6 @@ body {
   border-top-right-radius: 20vh; 
   width: 65vw;
   position: absolute;
-  top:0vw;
   right:40vw;
   z-index: 0;
 }
@@ -92,18 +98,20 @@ body {
   border-top-left-radius: 20vh; 
   width: 65vw;
   position: absolute;
-  top: 20vw;
   left:40vw;
   z-index: 1;
 
 }
 
+/* Div containing the text in the first block */
+.first-text {
+
+}
 .block-one-header {
   font-family: 'Gagalin', sans-serif;
   color: var(--green);
   font-size: 35px;
   width: 40vw;
-  top: 45vw;
   position: relative;
 }
 
@@ -112,12 +120,23 @@ body {
   width: 40vw;
   font-size: 20px;
   position: relative;
-  top: 45vw;
 }
+
+/* Clear after first block */
+.first-block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
 
 /* Second block containing image and several pieces of text */
 .second-block {
   position: relative;
+
 }
 .campers-hiking-image {
   left: -10px;
@@ -135,8 +154,6 @@ body {
   color: var(--green);
   font-size: 60px;
   overflow-wrap: break-word; 
-  top: 50vw;
-  left: 10vw;
   position: relative;
 }
 
@@ -144,8 +161,6 @@ body {
   color: var(--green);
   width: 50vw;
   font-size: 20px;
-  top: 50vw;
-  left: 10vw;
   position: relative;
 }
 
@@ -158,7 +173,30 @@ body {
   width: 250px;
   height: 50px;
   font-size: 20px;
-  top: 55vw;
-  left: 10vw;
   font-family: 'Gagalin', sans-serif;
+}
+
+.block-two-body-two {
+  color: var(--green);
+  width: 50vw;
+  font-size: 20px;
+  position: relative;
+}
+
+.second-left {
+  float: left;
+  width: 50%;
+}
+
+.second-right {
+  float: left;
+  width: 50%;
+}
+
+/* Add styling for the footer */
+.footer {
+  background-color: var(--green);
+  color: var(--white);
+  text-align: center;
+    width: 100%;
 }
