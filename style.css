@@ -166,8 +166,8 @@ body {
 
 .block-two-body-one {
   color: var(--green);
-  width: 50vw;
-  font-size: 20px;
+  width: 30vw;
+  font-size: 30px;
 }
 
 .explore-our-solution {
@@ -176,26 +176,27 @@ body {
   border: none;
   border-radius: 100px;
   color: var(--white);
-  width: 250px;
-  height: 50px;
-  font-size: 20px;
+  width: 30vw;
+  height: 60px;
+  font-size: 40px;
   font-family: 'Gagalin', sans-serif;
-}
-
-
-.second-left {
-  float: left;
-  width: 48%;
-  border: 2px solid rgb(255, 16, 16);
-  height: 200px;
-
 }
 
 .block-two-body-two {
   color: var(--green);
-  width: 50vw;
-  font-size: 20px;
+  width: 40vw;
+  font-size: 30px;
 }
+
+.second-left {
+  float: left;
+  width: 38%;
+  border: 2px solid rgb(255, 16, 16);
+  padding-left: 10%;
+
+}
+
+
 
 .second-right {
   float: right;
@@ -209,6 +210,20 @@ body {
   clear: both;
 }
 
+/* Add styling for icons */
+.icon-separator {
+  border: 2px solid rgb(32, 255, 16);
+  display: flex;
+  flex-grow: 1;
+
+}
+.icon-separator span {
+  flex-grow: 1;
+  border: 1px solid #000; /* Optional: Add border for visual separation */
+  text-align: center;
+  color: var(--blue);
+}
+
 
 
 /* Add styling for the footer */
@@ -216,5 +231,5 @@ body {
   background-color: var(--green);
   color: var(--white);
   text-align: center;
-    width: 100%;
+  width: 100%;
 }

@@ -19,9 +19,5 @@ function returnHeights() {
     const textOne = document.getElementById('first-body')
     textDiv.style.height = textOne.height + 'px'
 
-    var leftAlignedText = document.getElementById('second-left');
-    var rightAlignedText = document.getElementById('second-right');
-    rightAlignedText.style.height =  200 + 'px';
-    leftAlignedText.style.height = 200+'px'
 
 }
