@@ -224,12 +224,43 @@ body {
   color: var(--blue);
 }
 
+/* Styling for all the block three elements */
+.block-three {
+  border: 2px solid rgb(255, 16, 16);
+  height: 100%;
+}
 
+/* add stlyling for the slip n slide image */
+.slipnslide-image {
+  border-top-right-radius: 20vh; 
+  width: 65vw;
+  position: absolute;
+  float: left;
+}
 
-/* Add styling for the footer */
-.footer {
-  background-color: var(--green);
-  color: var(--white);
-  text-align: center;
-  width: 100%;
+.slipnslide-image:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.block-three-header {
+  font-family: 'Gagalin', sans-serif;
+  color: var(--blue);
+  font-size: 45px;
+  width: 35vw;
+  float: right;
+  position: relative;
+}
+
+.block-three-body-one {
+  color: var(--green);
+  width: 40vw;
+  font-size: 30px;
+  clear: both;
+}
+
+/* Span for blue-text class to make certain text blue */
+.blue-text {
+  color: var(--blue);
 }
