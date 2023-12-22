@@ -1,3 +1,74 @@
+/* Style.css */
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* My custom colors */
+
+:root {
+  --green: #0A401B;
+  --white: #F2F4EF;
+  --black: #000000;
+  --brown: #8F8073;
+  --blue: #0353A4;
+}
+
+html {
+  background-color: var(--white);
+}
+
+/* Top navigation bar ------------------------------------------ */
+
+.top-nav-bar {
+  position: fixed;
+  width: 100vw;
+  left: -2px;
+}
+
+.top-nav-img {
+  width: max-content;
+  display: inline-block;
+}
+.top-nav-bar img {
+  height: 10vh;
+  float: left;
+}
+
+.top-nav-links {
+  float: right;
+  height: max-content;
+}
+
+.top-nav-bar a {
+  font-family: 'Gagalin', sans-serif;
+  color: var(--green);
+  display: inline-block; 
+  padding: 0px 16px;
+  text-decoration: none;
+  vertical-align: center;
+  font-size: 17px;
+  height: 10vh;
+  padding-top: 3vw;
+  margin-bottom: -5vw;
+  
+}
+
+.top-nav-bar input {
+  font-family: 'Gagalin', sans-serif;
+  color: var(--green);
+  border-radius: 20px;
+  margin-right: 3vw;
+  padding-left: 10px;
+}
+
+/* Video header ------------------------------------------------ */
+
+
 /* style.css 
 .material-symbols-rounded {
   font-variation-settings:

@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
     const logo = document.querySelector(".logo");
     returnHeights();
     window.addEventListener("scroll", function () {
@@ -20,4 +20,4 @@ function returnHeights() {
     textDiv.style.height = textOne.height + 'px'
 
 
-}
+}*/
