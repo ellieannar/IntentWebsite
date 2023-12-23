@@ -25,8 +25,9 @@ html {
 /* Top navigation bar ------------------------------------------ */
 
 .top-nav-bar {
-  position: fixed;
+  position: relative;
   width: 100vw;
+  background: var(--white);
   left: -2px;
 }
 
@@ -55,7 +56,6 @@ html {
   height: 10vh;
   padding-top: 3vw;
   margin-bottom: -5vw;
-  
 }
 
 .top-nav-bar input {
@@ -66,8 +66,40 @@ html {
   padding-left: 10px;
 }
 
-/* Video header ------------------------------------------------ */
+/* Video container ------------------------------------------------ */
+.video-container {
+  position: relative;
+  border: #0353A4;
+  border-width: 10px;
+}
 
+.video-container video {
+  width: 101vw;
+  height: 75vh;
+  object-fit: cover;
+  position: absolute;
+  left: -9px;
+  z-index: -1;
+}
+
+.video-container p {
+  color: var(--white);
+  z-index: 1;
+  font-family: 'Gagalin', sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.video-overlaid-text {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5vh;
+  letter-spacing: 0.1em;
+}
 
 /* style.css 
 .material-symbols-rounded {
