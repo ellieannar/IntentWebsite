@@ -1,7 +1,116 @@
-/* style.css */
-/* style.css */
+/* Style.css */
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
 
 /* My custom colors */
+
+:root {
+  --green: #0A401B;
+  --white: #F2F4EF;
+  --black: #000000;
+  --brown: #8F8073;
+  --blue: #0353A4;
+}
+
+html {
+  background-color: var(--white);
+}
+
+/* Top navigation bar ------------------------------------------ */
+
+.top-nav-bar {
+  position: relative;
+  width: 100vw;
+  background: var(--white);
+  left: -2px;
+}
+
+.top-nav-img {
+  width: max-content;
+  display: inline-block;
+}
+.top-nav-bar img {
+  height: 10vh;
+  float: left;
+}
+
+.top-nav-links {
+  float: right;
+  height: max-content;
+}
+
+.top-nav-bar a {
+  font-family: 'Gagalin', sans-serif;
+  color: var(--green);
+  display: inline-block; 
+  padding: 0px 16px;
+  text-decoration: none;
+  vertical-align: center;
+  font-size: 17px;
+  height: 10vh;
+  padding-top: 3vw;
+  margin-bottom: -5vw;
+}
+
+.top-nav-bar input {
+  font-family: 'Gagalin', sans-serif;
+  color: var(--green);
+  border-radius: 20px;
+  margin-right: 3vw;
+  padding-left: 10px;
+}
+
+/* Video container ------------------------------------------------ */
+.video-container {
+  position: relative;
+  border: #0353A4;
+  border-width: 10px;
+}
+
+.video-container video {
+  width: 101vw;
+  height: 75vh;
+  object-fit: cover;
+  position: absolute;
+  left: -9px;
+  z-index: -1;
+}
+
+.video-container p {
+  color: var(--white);
+  z-index: 1;
+  font-family: 'Gagalin', sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.video-overlaid-text {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5vh;
+  letter-spacing: 0.1em;
+}
+
+/* style.css 
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* My custom colors 
 :root {
   --green: #0A401B;
   --white: #F2F4EF;
@@ -18,18 +127,19 @@ body {
   overflow-x: hidden;
 }
 
-/* Add the background color to the top navigation */
+/* Add the background color to the top navigation 
 .topnav {
-  background-color: var(--white);
+
+  border: 2px solid rgb(255, 16, 16);
   float: right;
   position: fixed;
   top: 0;
   right: 0;
 }
 
-/* Style the links inside the navigation bar */
+/* Style the links inside the navigation bar 
 .topnav a {
-  display: inline-block; /* Use inline-block instead of float */
+  display: inline-block; /* Use inline-block instead of float 
   color: var(--green);
   text-align: center;
   padding: 14px 16px;
@@ -37,14 +147,14 @@ body {
   font-size: 17px;
 }
 
-/* Change the color of links on hover */
+/* Change the color of links on hover 
 .topnav a:hover {
   background-color: var(--green);
   opacity: 0.5;
   color: var(--white);
 }
 
-/* Style the search box inside the navigation bar */
+/* Style the search box inside the navigation bar 
 .topnav input[type=text] {
   padding: 6px;
   border: none;
@@ -58,11 +168,11 @@ body {
 }
 
 .logo {
-  max-width: 100%; /* Ensure the logo doesn't exceed its original size */
-  height: auto; /* Maintain the aspect ratio of the image */
-  display: block; /* Remove any extra space below the image */
-  margin: 0 auto; /* Center align the image within its container */
-  transition: transform 0.5s; /* Add a smooth transition effect */
+  max-width: 100%; /* Ensure the logo doesn't exceed its original size 
+  height: auto; /* Maintain the aspect ratio of the image 
+  display: block; /* Remove any extra space below the image 
+  margin: 0 auto; /* Center align the image within its container 
+  transition: transform 0.5s; /* Add a smooth transition effect 
 }
 
 
@@ -70,16 +180,15 @@ body {
 
 
 
-/* Contains two images and software header/body text ---------------- */
-
-/* Div containing all first-block items */
+/* Contains two images and software header/body text ---------------- 
+/* Div containing all first-block items 
 .first-block {
   border: 2px solid rgb(255, 16, 16);
   height: 100%;
   
 }
 
-/* Div containing the photos in the first block */
+/* Div containing the photos in the first block 
 .first-photos {
 }
 .first-photos:after{
@@ -105,7 +214,7 @@ body {
   transform: translateY(50%);
 }
 
-/* Div containing the text in the first block */
+/* Div containing the text in the first block 
 .first-text {
   z-index: 5;
 }
@@ -124,7 +233,7 @@ body {
   position: relative;
 }
 
-/* Clear after first block */
+/* Clear after first block 
 .first-block:after {
   content: "";
   display: table;
@@ -132,12 +241,13 @@ body {
 }
 
 
-/* Second block containing image and several pieces of text */
+/* Second block containing image and several pieces of text 
 .second-block {
   position: relative;
   border: 2px solid rgb(16, 255, 72);
 
 }
+
 .campers-hiking-image {
   left: -10px;
   width: 110vw;
@@ -158,8 +268,8 @@ body {
 
 .block-two-body-one {
   color: var(--green);
-  width: 50vw;
-  font-size: 20px;
+  width: 30vw;
+  font-size: 30px;
 }
 
 .explore-our-solution {
@@ -168,36 +278,91 @@ body {
   border: none;
   border-radius: 100px;
   color: var(--white);
-  width: 250px;
-  height: 50px;
-  font-size: 20px;
+  width: 30vw;
+  height: 60px;
+  font-size: 40px;
   font-family: 'Gagalin', sans-serif;
 }
 
 .block-two-body-two {
   color: var(--green);
-  width: 50vw;
-  font-size: 20px;
+  width: 40vw;
+  font-size: 30px;
 }
 
 .second-left {
   float: left;
-  width: 48%;
+  width: 38%;
   border: 2px solid rgb(255, 16, 16);
+  padding-left: 10%;
 
 }
+
+
 
 .second-right {
   float: right;
   width: 48%;
   border: 2px solid rgb(64, 16, 255);
-
 }
 
-/* Add styling for the footer */
-.footer {
-  background-color: var(--green);
-  color: var(--white);
+.content-one:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Add styling for icons 
+.icon-separator {
+  border: 2px solid rgb(32, 255, 16);
+  display: flex;
+  flex-grow: 1;
+
+}
+.icon-separator span {
+  flex-grow: 1;
+  border: 1px solid #000; /* Optional: Add border for visual separation 
   text-align: center;
-    width: 100%;
+  color: var(--blue);
+}
+
+/* Styling for all the block three elements 
+.block-three {
+  border: 2px solid rgb(255, 16, 16);
+  height: 100%;
+}
+
+/* add stlyling for the slip n slide image 
+.slipnslide-image {
+  border-top-right-radius: 20vh; 
+  width: 65vw;
+  position: absolute;
+  float: left;
+}
+
+.slipnslide-image:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.block-three-header {
+  font-family: 'Gagalin', sans-serif;
+  color: var(--blue);
+  font-size: 45px;
+  width: 35vw;
+  float: right;
+  position: relative;
+}
+
+.block-three-body-one {
+  color: var(--green);
+  width: 40vw;
+  font-size: 30px;
+  clear: both;
+}
+
+/* Span for blue-text class to make certain text blue 
+.blue-text {
+  color: var(--blue);
 }
