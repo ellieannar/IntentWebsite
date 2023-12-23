@@ -1,3 +1,11 @@
+const leftButton = document.getElementById('left-button')
+const rightButton = document.getElementById('right-button')
+const slideList = document.getElementById('slide-list')
+
+const itemWidth = 150
+const padding = 10
+
+
 
 /*document.addEventListener("DOMContentLoaded", function () {
     const logo = document.querySelector(".logo");

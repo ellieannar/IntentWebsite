@@ -105,11 +105,11 @@ html {
 .our-software-container {
   position: relative;
   margin-top: 30px;
-  height: 70vh;
+  height: 75vh;
 }
 
 .our-software-image {
-  width: 65%;
+  height: 65vh;
   float: left;
 }
 
@@ -143,12 +143,13 @@ html {
   font-size: 3vh;
 }
 
-/* Our software Info ------------------------------------------ */
+/* Icon separator ------------------------------------------ */
 
 .icon-separator {
   position: relative;
   height: 10vh;
   text-align: center;
+  padding-top: 10px;
 }
 
 .icon-separator span {
@@ -159,6 +160,27 @@ html {
   font-size: 10vh;
 }
 
+/* Carousel ------------------------------------------ */
+
+.slide {
+  scroll-snap-align: center;
+  width: 90vw;
+}
+
+.slide-list {
+  width: 100vw;
+  max-width: 950px;
+  display: flex;
+  scroll-behavior: smooth;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.slide-list::-webkit-scrollbar {
+  display: none;
+}
 
 /* style.css 
 .material-symbols-rounded {
