@@ -162,288 +162,78 @@ html {
 
 /* Carousel ------------------------------------------ */
 
-.slide {
-  scroll-snap-align: center;
-  width: 90vw;
+/* WHAT DOES THIS DO??? */
+* {box-sizing:border-box}
+
+
+.carousel-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-.slide-list {
-  width: 100vw;
-  max-width: 950px;
-  display: flex;
-  scroll-behavior: smooth;
-  overflow: auto;
-  scroll-snap-type: x mandatory;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+
+
+.left-button, .right-button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: var(--brown);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
 }
 
-.slide-list::-webkit-scrollbar {
-  display: none;
-}
-
-/* style.css 
-.material-symbols-rounded {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
-
-/* My custom colors 
-:root {
-  --green: #0A401B;
-  --white: #F2F4EF;
-  --black: #000000;
-  --brown: #8F8073;
-  --blue: #0353A4;
-}
-
-html {
-  background-color: var(--white);
-}
-
-body {
-  overflow-x: hidden;
-}
-
-/* Add the background color to the top navigation 
-.topnav {
-
-  border: 2px solid rgb(255, 16, 16);
-  float: right;
-  position: fixed;
-  top: 0;
+.right-button {
   right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-/* Style the links inside the navigation bar 
-.topnav a {
-  display: inline-block; /* Use inline-block instead of float 
-  color: var(--green);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover 
-.topnav a:hover {
+.right-button:hover, .left-button:hover {
   background-color: var(--green);
-  opacity: 0.5;
+}
+
+/* Caption text */
+.slide-text {
   color: var(--white);
-}
-
-/* Style the search box inside the navigation bar 
-.topnav input[type=text] {
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
-}
-
-.logo-container {
- height: 90dvb;
-}
-
-.logo {
-  max-width: 100%; /* Ensure the logo doesn't exceed its original size 
-  height: auto; /* Maintain the aspect ratio of the image 
-  display: block; /* Remove any extra space below the image 
-  margin: 0 auto; /* Center align the image within its container 
-  transition: transform 0.5s; /* Add a smooth transition effect 
-}
-
-
-
-
-
-
-/* Contains two images and software header/body text ---------------- 
-/* Div containing all first-block items 
-.first-block {
-  border: 2px solid rgb(255, 16, 16);
-  height: 100%;
-  
-}
-
-/* Div containing the photos in the first block 
-.first-photos {
-}
-.first-photos:after{
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.girl-worshiping-image {
-  border-top-right-radius: 20vh; 
-  width: 65vw;
+  font-size: 15px;
+  padding: 8px 12px;
   position: absolute;
-  right:40vw;
-  z-index: 0;
-}
-
-.guitar-playing-image {
-  border-top-left-radius: 20vh; 
-  width: 65vw;
-  position: absolute;
-  left:40vw;
-  z-index: 1;
-  transform: translateY(50%);
-}
-
-/* Div containing the text in the first block 
-.first-text {
-  z-index: 5;
-}
-.block-one-header {
-  font-family: 'Gagalin', sans-serif;
-  color: var(--green);
-  font-size: 35px;
-  width: 35vw;
-  position: relative;
-}
-
-.block-one-body {
-  color: var(--green);
-  width: 35vw;
-  font-size: 20px;
-  position: relative;
-}
-
-/* Clear after first block 
-.first-block:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-/* Second block containing image and several pieces of text 
-.second-block {
-  position: relative;
-  border: 2px solid rgb(16, 255, 72);
-
-}
-
-.campers-hiking-image {
-  left: -10px;
-  width: 110vw;
-  height: 400px;
-  position: relative;
-  object-fit: cover;  
-  object-position: 0 80%;
-
-}
-
-.block-two-header {
-  font-family: 'Gagalin', sans-serif;
-  color: var(--green);
-  font-size: 60px;
-  overflow-wrap: break-word; 
-  position: relative;
-}
-
-.block-two-body-one {
-  color: var(--green);
-  width: 30vw;
-  font-size: 30px;
-}
-
-.explore-our-solution {
-  position: relative;
-  background-color: var(--brown);
-  border: none;
-  border-radius: 100px;
-  color: var(--white);
-  width: 30vw;
-  height: 60px;
-  font-size: 40px;
-  font-family: 'Gagalin', sans-serif;
-}
-
-.block-two-body-two {
-  color: var(--green);
-  width: 40vw;
-  font-size: 30px;
-}
-
-.second-left {
-  float: left;
-  width: 38%;
-  border: 2px solid rgb(255, 16, 16);
-  padding-left: 10%;
-
-}
-
-
-
-.second-right {
-  float: right;
-  width: 48%;
-  border: 2px solid rgb(64, 16, 255);
-}
-
-.content-one:after{
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Add styling for icons 
-.icon-separator {
-  border: 2px solid rgb(32, 255, 16);
-  display: flex;
-  flex-grow: 1;
-
-}
-.icon-separator span {
-  flex-grow: 1;
-  border: 1px solid #000; /* Optional: Add border for visual separation 
+  bottom: 8px;
+  width: 100%;
   text-align: center;
-  color: var(--blue);
 }
 
-/* Styling for all the block three elements 
-.block-three {
-  border: 2px solid rgb(255, 16, 16);
-  height: 100%;
+.carousel-indicator {
+  text-align: center;
 }
 
-/* add stlyling for the slip n slide image 
-.slipnslide-image {
-  border-top-right-radius: 20vh; 
-  width: 65vw;
-  position: absolute;
-  float: left;
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-.slipnslide-image:after {
-  content: "";
-  display: table;
-  clear: both;
+.active, .dot:hover {
+  background-color: #717171;
 }
 
-.block-three-header {
-  font-family: 'Gagalin', sans-serif;
-  color: var(--blue);
-  font-size: 45px;
-  width: 35vw;
-  float: right;
-  position: relative;
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-.block-three-body-one {
-  color: var(--green);
-  width: 40vw;
-  font-size: 30px;
-  clear: both;
-}
-
-/* Span for blue-text class to make certain text blue 
-.blue-text {
-  color: var(--blue);
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }

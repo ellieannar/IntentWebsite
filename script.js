@@ -1,32 +1,29 @@
-const leftButton = document.getElementById('left-button')
-const rightButton = document.getElementById('right-button')
-const slideList = document.getElementById('slide-list')
+/* confirm("Website currently under construction. Please be patient :)\nPress 'OK' for site preview."); */
 
-const itemWidth = 150
-const padding = 10
+let slideIndex = 1;
+showSlide(slideIndex);
 
+// Left and right moving slides
+function moveSlide(i) {
+    showSlide(slideIndex += i);
+}
 
+function jumpToSlide(i) {
+    showSlide(slideIndex = i);
+}
 
-/*document.addEventListener("DOMContentLoaded", function () {
-    const logo = document.querySelector(".logo");
-    returnHeights();
-    window.addEventListener("scroll", function () {
-        // Calculate the scale factor based on the scroll position
-        const scale = 1 - window.scrollY / (document.documentElement.clientHeight / 2);
-        
-        // Apply the scaling to the logo
-        logo.style.transform = `scale(${scale > 0 ? scale : 0.01})`;
-    });
-});
+function showSlide() {
+    
+    let imgSources = ["Media/campersWorshiping.jpg","Media/guitarplaying.jpg", "Media/slipnslide.jpg"];
+    let imgAlts = ["Campers worshiping outdorrs", "Girl playing guitar on stage", "Campers smiling for the camera"];
+    if (slideIndex > imgSources.length) {
+        slideIndex = 1;
+    } else if (slideIndex <= 0) {
+        slideIndex = imgSources.length;
+    }
+    console.log("Displaying: " + imgSources[slideIndex-1] + ", slideIndex: " + slideIndex);
+    let image = document.getElementById("slide-image");
+    image.src = imgSources[slideIndex-1];
+    image.alt = imgAlts[slideIndex-1];
+}
 
-function returnHeights() {
-    var photosDiv = document.getElementById('first-photos');
-    const image2 = document.getElementById('guitar-playing-image');
-    photosDiv.style.height = (image2.height) + 'px';
-
-    var textDiv = document.getElementById('first-text');
-    const textOne = document.getElementById('first-body')
-    textDiv.style.height = textOne.height + 'px'
-
-
-}*/
