@@ -1,7 +1,20 @@
 /* confirm("Website currently under construction. Please be patient :)\nPress 'OK' for site preview."); */
 
+//Carousel code -----------------------------------
 let slideIndex = 1;
-showSlide(slideIndex);
+
+document.addEventListener('DOMContentLoaded', function () {
+    showSlide(slideIndex);
+
+    var rightButton = document.getElementById("right-button");
+    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    rightButton.style.left = (screenWidth - 89.5) + 'px';
+    
+
+})
+
+
+
 
 // Left and right moving slides
 function moveSlide(i) {
@@ -21,9 +34,7 @@ function showSlide() {
     } else if (slideIndex <= 0) {
         slideIndex = imgSources.length;
     }
-    console.log("Displaying: " + imgSources[slideIndex-1] + ", slideIndex: " + slideIndex);
     let image = document.getElementById("slide-image");
     image.src = imgSources[slideIndex-1];
     image.alt = imgAlts[slideIndex-1];
 }
-
