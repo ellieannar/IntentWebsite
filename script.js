@@ -56,3 +56,5 @@ function responsiveTopNav() {
       x.className = "top-nav-links";
     }
   }
+
+// Mailing list joining
