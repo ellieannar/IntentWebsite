@@ -279,3 +279,85 @@ html {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+/* More info ------------------------------------------ */
+
+.more-info-container {
+  position: relative;
+  margin-top: 30px;
+  height: 70vh;
+}
+
+.more-info-image {
+  height: 65vh;
+  float: right;
+}
+
+.more-info-image img{
+  border-top-left-radius: 20vh; 
+  position: absolute;
+  left: 45vw;
+  z-index: 0;
+  width: 65vw;
+}
+
+.more-info-text {
+  width: 40%;
+  float: left;
+  position: absolute;
+  left: 3vw;
+}
+.more-info-header {
+  font-family: 'Gagalin', sans-serif;
+  color: var(--green);
+  font-size: 6vh;
+  margin-bottom: 0px;
+}
+
+.more-info-tagline {
+  font-family: 'Gagalin', sans-serif;
+  color: var(--green);
+  font-size: 2vh;
+}
+
+.more-info-body {
+  color: var(--green);
+  font-size: 3vh;
+}
+
+/* Footer ------------------------------------------ */
+
+.footer {
+  position: relative;
+  width: 100vw;
+  background:var(--brown);
+  left: -2px;
+  height: max-content;
+}
+
+.footer-logo {
+  width: max-content;
+  display: inline-block;
+}
+.footer-logo-img {
+  height: 15vh;
+  float: left;
+}
+
+.footer-links{
+  float: right;
+  height: max-content;
+}
+
+.footer a {
+  font-family: 'Gagalin', sans-serif;
+  color: var(--green);
+  display: inline-block; 
+  padding: 0px 16px;
+  text-decoration: none;
+  vertical-align: center;
+  font-size: 17px;
+  height: 10vh;
+  padding-top: 3vw;
+  margin-bottom: -5vw;
+}
