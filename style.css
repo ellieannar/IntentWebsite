@@ -331,7 +331,7 @@ html {
   position: relative;
   width: 100vw;
   background:var(--brown);
-  left: -2px;
+  left: -8px;
   height: max-content;
 }
 
@@ -360,4 +360,14 @@ html {
   height: 10vh;
   padding-top: 3vw;
   margin-bottom: -5vw;
+}
+
+.contact-info {
+  position: relative;
+  float: right;
+}
+
+.social-media-links {
+  position: relative;
+  float: right;
 }
