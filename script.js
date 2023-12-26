@@ -1,4 +1,4 @@
-/* confirm("Website currently under construction. Please be patient :)\nPress 'OK' for site preview."); */
+ confirm("Website currently under construction. Please be patient :)\nPress 'OK' for site preview.\n"); 
 
 //Carousel code -----------------------------------
 let slideIndex = 1;
@@ -56,3 +56,5 @@ function responsiveTopNav() {
       x.className = "top-nav-links";
     }
   }
+
+// Mailing list joining
