@@ -17,10 +17,10 @@ img, video, span {
 /* My custom colors */
 
 :root {
-  --green: #0A401B;
+  --green: #209D50 /*#0A401B*/;
   --white: #F2F4EF;
   --black: #000000;
-  --brown: #8F8073;
+  --tan: #E1DFD9 /*#8F8073*/;
   --blue: #0353A4;
 }
 
@@ -77,6 +77,10 @@ html {
   padding-left: 10px;
 }
 
+#search-bar {
+  border: none;
+}
+
 /* top-nav mobile response */
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the top-nav (.icon) */
 @media screen and (max-width: 600px) {
@@ -116,6 +120,7 @@ html {
   position: absolute;
   left: -9px;
   z-index: -1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .video-container p {
@@ -156,6 +161,7 @@ html {
   right:45vw;
   z-index: 0;
   width: 65vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .our-software-text {
@@ -214,7 +220,7 @@ html {
   height: 90vh;
   object-fit: cover; 
   margin-left: -8px;
-
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .left-button, .right-button {
@@ -299,6 +305,7 @@ html {
   left: 45vw;
   z-index: 0;
   width: 65vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .more-info-text {
