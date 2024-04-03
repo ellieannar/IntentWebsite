@@ -88,7 +88,7 @@ html {
 
 /* MARK: Block Two */
 
-#block-two {
+#block-two-content {
     display: flex;
     align-self: center;
     flex-direction: column;
@@ -125,4 +125,29 @@ html {
 #block-two :hover#get-started-button {
     background-color: black;
     color: white;
+}
+
+/* MARK: Testing */
+
+#quarter-circle {
+    position: relative;
+    margin-left: 1vw;
+}
+#quarter-circle-border {
+    width: 10vw;
+    height: 10vw;
+    border-bottom-left-radius: 200px;
+    border: 10px solid black;
+    position: absolute;
+}
+
+#quarter-circle-cutout {
+    width: 10vw;
+    height: 10vw;
+    background-color: var(--white);
+    border-bottom-left-radius: 200px;
+    border: 10px solid transparent;
+    position: absolute;
+    left: 2px;
+    top: -2px;
 }
