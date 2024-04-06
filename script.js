@@ -1,5 +1,5 @@
 if (confirm("Website currently under construction. Please be patient :)\nPress 'OK' for site preview.\n") == true) {
-    window.location.href = "https://campintent.org/home.html";
+    window.location.href = "Home/home.html";
 }
 //Carousel code -----------------------------------
 let slideIndex = 1;
