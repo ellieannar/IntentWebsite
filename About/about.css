@@ -162,3 +162,73 @@ body {
     margin-top: 50px; /* Adjust spacing between text and line */
     width: 80%;
 }
+
+/* MARK: Block Three */
+#sub-heading {
+    padding: 0px;
+    width: 85%;
+    margin-left: 3vw;
+    margin-top: 5vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#block-three {
+    margin-top: 1vh;
+    padding-left: 0;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#block-three-heading {
+    font-size: 5vw;
+    padding-left: 3vw;
+}
+
+#block-three-grid {
+    width: 90%; 
+    display: flex;
+    margin: auto;    
+    justify-content: space-between; 
+}
+
+.block-three-grid-item {
+    flex-basis: calc(33.33% - 20px); /* Set the initial size of each item to one-third of the container minus spacing */
+    text-align: left;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Add spacing between items */
+    display: inline-block; /* Add this line */
+    vertical-align: top; /* Align items to the top */
+}
+
+#ellieanna {
+    height: 60vh;
+    background-image:  url('../Media/ellieanna.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+#hakyeom {
+    height: 60vh;
+    background-image:  url('../Media/hakyeom.png');
+    background-size: cover; 
+    background-position: center; 
+}
+#abigail {
+    height: 60vh;
+    background-image:  url('../Media/abigail.png');
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+
+.name {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    font-size: 3vh;
+    margin-bottom: 0;
+}
+
+
+
