@@ -64,3 +64,204 @@ body {
       float: none;
     }
 }
+
+/* MARK: Block one */
+#block-one {
+    display: flex;
+    flex-direction: column;
+}
+
+#left-column {
+    width: 50%;
+}
+
+#right-column {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+}
+
+#header-photo {
+    height: 110vh;
+    width: 90%;
+    margin: auto;
+    background-image: url('../Media/camperSmiling.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+#block-one-title {
+    font-size: 5vw;
+    padding-left: 3vw;
+    margin-bottom: 0;
+}
+
+/* MARK: Quarter Circle */
+#quarter-circle {
+    margin-top: 0;
+    position: relative;
+    margin-left: 5%;
+}
+#quarter-circle-border {
+    width: 10vw;
+    height: 10vw;
+    border-bottom-left-radius: 200px;
+    border: 10px solid black;
+    position: absolute;
+}
+
+#quarter-circle-cutout {
+    width: 10vw;
+    height: 10vw;
+    background-color: var(--white);
+    border-bottom-left-radius: 200px;
+    border: 10px solid transparent;
+    position: absolute;
+    left: 2px;
+    top: -2px;
+}
+
+#sub-column {
+    position: relative;
+}
+
+#block-one-body {
+    position: relative;
+    top: 10vh;
+    left: 30%;
+    width: 60%;
+    font-size: 2vh;
+}
+
+.line {
+    border-bottom: 2px solid black;
+    width: 80%;
+    margin: auto;
+    margin-top: 20vh;
+}
+
+/* MARK: Block two */
+#block-two-header {
+   margin: auto;
+   margin-top: 10vh;
+   width: 100%;
+}
+
+#block-two-header-text {
+    margin: auto;
+    text-align: center;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#block-two-header-subtitle {
+    text-align: center;
+    font-size: 3vw;
+    margin: auto;
+    padding-bottom: 5vh;
+}
+
+#block-two-columns {
+    width: 100%;
+}
+
+#block-two-left-column {
+    width: 25%;
+    position: absolute;
+}
+
+#block-two-left-middle-column {
+    width: 25%;
+    position: absolute;
+    left: 25%;
+}
+
+#block-two-right-middle-column {
+    width: 25%;
+    position: absolute;
+    left: 50%;
+}
+
+#block-two-right-column {
+    width: 25%;
+    position: absolute;
+    left: 75%;
+}
+
+#package-name {
+    font-size: 3vh;
+}
+
+#package-price {
+    margin: auto;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#more-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.more-info-line {
+    border-bottom: 1px solid black;
+    width: 80%;
+}
+
+#more-info-row {
+    display: flex;
+    flex-direction: row;
+}
+
+#more-info-button {
+    height: 100%;
+    top: 50%;
+    margin: auto;
+}
+
+/* MARK: Block three */
+
+#block-three {
+    background-color: var(--dark-green);
+    position: relative;
+    top: 40vh;
+    color: var(--white);
+    height: 40vh;
+}
+#block-three-header {
+    margin: auto;
+    text-align: center;
+    padding: 0px;
+    position: relative;
+    top: 5vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#block-three-body {
+    margin: auto;
+    text-align: center;
+    padding: 0px;
+    position: relative;
+    top: 6vh;
+    font-size: 5vh;
+    max-width: 70%;
+}
+
+#get-started {
+    position: relative;
+    top: 10vh;
+    left: 44%;
+    margin: auto;    
+    width: max-content;
+    height: max-content;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    color: white;
+    padding: 1vw 3vw;
+    border: 1px solid white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1vw;
+    background-color: var(--green);
+}
