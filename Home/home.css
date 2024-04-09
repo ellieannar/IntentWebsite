@@ -318,3 +318,47 @@ body {
     background-color: black;
     color: white;
 }
+
+/* MARK: Footer */
+#footer {
+    display: flex;
+    flex-direction: row;
+}
+
+#email-collection {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+}
+
+#leave-email {
+    font-size: 2vw;
+    margin-bottom: 0;
+}
+
+#sign-up-text {
+    margin-top: 0;
+}
+
+#email-input-div {
+    display: flex;
+    flex-direction: row;
+}
+
+#email-input {
+    border-radius: 5px;
+    border: none;
+    background-color: var(--tan);
+    padding: 20px;
+    width: 50%;
+}
+
+#sign-up {
+    margin-left: 5%;
+    background-color: var(--green);
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
