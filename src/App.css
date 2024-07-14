@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+:root {
+  --logo-green: rgb(17, 56, 26)
+}
