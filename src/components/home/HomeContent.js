@@ -1,39 +1,36 @@
 import React from 'react';
 import './HomeContent.css';
-import RoundedCornerImage from './RoundedCornerImage';
-import { CORNER } from '../../constants';
-import worshiping from '../../assets/images/campersWorshiping.jpg';
-import guitarPlayer from '../../assets/images/guitarplaying.jpg';
-import hiking from '../../assets/images/hiking.jpg';
+import Features from './Features';
+import PhotoPanel from './PhotoPanel';
+import campersLaughing from '../../assets/images/campersLaughing.jpg'
+import Button from './Button';
+import Footer from '../footer/Footer';
 
 const HomeContent = () => {
   const videoUrl = process.env.PUBLIC_URL + '/videos/intentBanner.mp4';
 
   return (
-    <div>
-      <video muted autoPlay loop width="100%">
-        <source src={videoUrl} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <div className='quadrant-container'>
-        <div className='quadrant'>
-          <RoundedCornerImage image={worshiping} corners={[CORNER.top_right]} width='100%' className='quadrant-image' />
-        </div>
-        <div className='quadrant'></div>
-        <div className='quadrant'>
-            <div className='heading'>
-                Camp Management Software
-            </div>
-            <div className='body'>
-                Intent is set on making camp management easier through custom camp management solutions, allowing camp professionals to devote resources to other aspects of camp.
-            </div>
-            
-        </div>
-        <div className='quadrant'>
-          <RoundedCornerImage image={guitarPlayer} corners={[CORNER.bottom_left]} width='100%' className='quadrant-image' />
+    <div className='home-content'>
+      <div className='video-container'>
+        <video muted autoPlay loop className='background-video'>
+          <source src={videoUrl} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className='video-overlay'>
+          {/* <Tag title="Camp Management Software" backgroundColor="black" textColor="white"/> */}
+          <div className='video-panel-title'>We're More Than Just <br/>A Software Solution</div>
+          <div className='video-panel-body'>Our all-in-one camp management software makes camp operations a breeze through effortlessly managing registration, guest groups, scheduling, and more.</div>
+          <div className='video-panel-buttons'>
+            <Button text={"Beta Group"} link={""} backgroundColor={"black"} textColor={"white"} />
+            <Button text={"Beta Group"} link={""} backgroundColor={"black"} textColor={"white"} />
+          </div>
         </div>
       </div>
-      <RoundedCornerImage image={hiking} corners={[]} width='100%'/>
+      <Features />
+      <PhotoPanel image={campersLaughing} />
+      <Footer />
+      {/* <QuadrantContainer/> */}
+      {/* <RoundedCornerImage image={hiking} corners={[CORNER.top_left]} width='60%' /> */}
     </div>
   );
 };

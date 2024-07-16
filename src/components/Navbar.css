@@ -24,6 +24,7 @@
     width: 100px;
     scale: 2;
     margin-left: 10px;
+    overflow: hidden;
   }
   
   
