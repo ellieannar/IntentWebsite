@@ -1,0 +1,30 @@
+/* Navbar.css */
+.nav-links {
+    display: flex;
+    justify-content: space-between; /* Aligns items with space between them */
+    align-items: center; /* Centers items vertically */
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #f0f0f0; /* Example background color */
+  }
+  
+  .nav-link-item {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .nav-link-item:hover {
+    background-color: var(--logo-green);
+    color: white;
+    transition: 0.5s;
+  }
+  
+  .nav-link-logo img {
+    width: 100px;
+    scale: 2;
+    margin-left: 10px;
+    overflow: hidden;
+  }
+  
+  
