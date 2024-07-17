@@ -38,5 +38,6 @@
 }
 
 :root {
-  --logo-green: rgb(17, 56, 26)
+  --logo-green: rgb(17, 56, 26);
+  overflow-x: hidden;
 }

@@ -22,13 +22,12 @@ const HomeContent = () => {
           <div className='video-panel-body'>Our all-in-one camp management software makes camp operations a breeze through effortlessly managing registration, guest groups, scheduling, and more.</div>
           <div className='video-panel-buttons'>
             <Button text={"Beta Group"} link={""} backgroundColor={"black"} textColor={"white"} />
-            <Button text={"Beta Group"} link={""} backgroundColor={"black"} textColor={"white"} />
+            <Button text={"More Info"} link={""} backgroundColor={"black"} textColor={"white"} />
           </div>
         </div>
       </div>
       <Features />
       <PhotoPanel image={campersLaughing} />
-      <Footer />
       {/* <QuadrantContainer/> */}
       {/* <RoundedCornerImage image={hiking} corners={[CORNER.top_left]} width='60%' /> */}
     </div>

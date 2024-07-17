@@ -1,0 +1,198 @@
+.about-heading-image {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.photo-overlay {
+    position: absolute;
+    top: 95px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    text-align: center;
+}
+
+.photo-panel-title {
+    font-size: 7vw;
+    font-weight: bold;
+}
+
+.photo-panel-body {
+    font-size: 2vw;
+}
+
+/* VALUES -------------------------------------------------- */
+
+.values-container {
+    display: flex;
+    width: 100%;
+}
+
+.values-title {
+    font-weight: bold;
+    font-size: 5vw;
+    padding:20px; 
+}
+
+.value {
+    flex: 1;
+    padding: 20px;
+    width: 100%;
+}
+
+.value-description {
+    padding: 10px;
+    width: 90%;
+}
+
+/* TEAM -------------------------------------------------- */
+.team {
+    background-color: var(--logo-green);
+    padding: 40px 20px;
+}
+
+.team-heading {
+    font-weight: bold;
+    font-size: 5vw;
+    padding: 20px; 
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-member-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* TEAM MEMBER -------------------------------------------------- */
+.team-member-item {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 300px;
+    margin: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.team-member-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.team-member-photo {
+    width: 100%;
+    height: auto;
+    border-bottom: 5px solid var(--logo-green);
+}
+
+.team-member-info {
+    padding: 20px;
+}
+
+.team-member-name {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: var(--logo-green);
+}
+
+.team-member-title {
+    font-size: 1.2em;
+    color: grey;
+    margin-bottom: 15px;
+}
+
+.team-member-bio {
+    font-size: 1em;
+    color: #555;
+}
+
+/* VALUES -------------------------------------------------- */
+.values-section {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .values-title {
+    font-weight: bold;
+    font-size: 4vw;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .values-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  
+  .value {
+    flex: 1;
+    max-width: 300px;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .value:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
+  .value-description {
+    padding: 10px;
+    font-size: 0.9em;
+    color: #555;
+    text-align: left;
+  }
+  
+  /* Value ITEM --------------------------------------------------- */
+.value-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .value-item .fai {
+    font-size: 3em;
+    color: var(--logo-green);
+    margin-bottom: 15px;
+  }
+  
+  .value-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .value-body {
+    font-size: 1em;
+    color: #777;
+    text-align: center;
+  }
+  
+  .value-item:hover {
+    color: var(--logo-green);
+  }
+  
